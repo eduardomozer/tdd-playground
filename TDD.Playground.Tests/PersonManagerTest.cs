@@ -7,8 +7,8 @@ namespace TDD.Playground.Tests
     public class PersonManagerTest
     {
         [TestMethod]
-        [Owner("EduardoCM")]
-        public void CreatePerson_OfType_Employee_Test()
+        [Owner("Eduardo")]
+        public void CreatePersonOfTypeEmployee_Test()
         {
             var personManager = new PersonManager();
             Person person;
@@ -19,7 +19,7 @@ namespace TDD.Playground.Tests
         }
 
         [TestMethod]
-        [Owner("EduardoCM")]
+        [Owner("Eduardo")]
         public void DoEmployeeExist_Test()
         {
             var supervisor = new Supervisor("John", "Doe");

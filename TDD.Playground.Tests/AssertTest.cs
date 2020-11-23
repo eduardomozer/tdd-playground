@@ -9,8 +9,8 @@ namespace TDD.Playground.Tests
         #region Are Equal/Are Not Equal Tests
 
         [TestMethod]
-        [Owner("EduardoCM")]
-        public void AreEqualTest()
+        [Owner("Eduardo")]
+        public void AreEqual_Test()
         {
             var str1 = "John";
             var str2 = "John";
@@ -19,9 +19,9 @@ namespace TDD.Playground.Tests
         }
 
         [TestMethod]
-        [Owner("EduardoCM")]
+        [Owner("Eduardo")]
         [ExpectedException(typeof(AssertFailedException))]
-        public void AreEqualCaseSensitiveTest()
+        public void AreEqualCaseSensitive_Test()
         {
             var str1 = "John";
             var str2 = "john";
@@ -30,10 +30,10 @@ namespace TDD.Playground.Tests
         }
 
         [TestMethod]
-        [Owner("EduardoCM")]
-        public void AreNotEqualTest()
+        [Owner("Eduardo")]
+        public void AreNotEqual_Test()
         {
-            string str1 = "Eduardo";
+            string str1 = "John";
             string str2 = "Roger";
 
             Assert.AreNotEqual(str1, str2);
@@ -44,7 +44,8 @@ namespace TDD.Playground.Tests
         #region Are Same/Are Not Same Tests
 
         [TestMethod]
-        public void AreSameTest()
+        [Owner("Eduardo")]
+        public void AreSame_Test()
         {
             var x = new FileProcess();
             var y = x;
@@ -53,7 +54,8 @@ namespace TDD.Playground.Tests
         }
 
         [TestMethod]
-        public void AreNotSameTest()
+        [Owner("Eduardo")]
+        public void AreNotSame_Test()
         {
             var x = new FileProcess();
             var y = new FileProcess();
@@ -66,25 +68,25 @@ namespace TDD.Playground.Tests
         #region IsInstanceOfType/IsNull Test
 
         [TestMethod]
-        [Owner("EduardoCM")]
-        public void IsInstanceOfTypeTest()
+        [Owner("Eduardo")]
+        public void IsInstanceOfType_Test()
         {
             var personManager = new PersonManager();
             Person person;
 
-            person = personManager.CreatePerson("Eduardo", "Mozer", true);
+            person = personManager.CreatePerson("John", "Doe", true);
 
             Assert.IsInstanceOfType(person, typeof(Supervisor));
         }
 
         [TestMethod]
-        [Owner("EduardoCM")]
-        public void IsNullTest()
+        [Owner("Eduardo")]
+        public void IsNull_Test()
         {
             var personManager = new PersonManager();
             Person person;
 
-            person = personManager.CreatePerson("", "Mozer", true);
+            person = personManager.CreatePerson("", "Doe", true);
 
             Assert.IsNull(person);
         }

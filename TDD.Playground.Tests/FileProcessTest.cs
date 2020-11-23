@@ -21,7 +21,7 @@ namespace TDD.Playground.Tests
         [TestInitialize]
         public void TestInitialize()
         {
-            if (TestContext.TestName.StartsWith(nameof(FileNameDoesExists)))
+            if (TestContext.TestName.StartsWith(nameof(FileNameDoesExists_Test)))
             {
                 SetGoodFileName();
 
@@ -36,7 +36,7 @@ namespace TDD.Playground.Tests
         [TestCleanup]
         public void TestCleanup()
         {
-            if (TestContext.TestName.StartsWith(nameof(FileNameDoesExists)))
+            if (TestContext.TestName.StartsWith(nameof(FileNameDoesExists_Test)))
             {
                 if (!string.IsNullOrEmpty(_GoodFileName))
                 {
@@ -51,11 +51,10 @@ namespace TDD.Playground.Tests
         #region Test Methods
 
         [TestMethod]
-        [Description("Check if a file does exist.")]
-        [Owner("EduardoCM")]
+        [Owner("Eduardo")]
         [Priority(0)]
         [TestCategory("NoException")]
-        public void FileNameDoesExists()
+        public void FileNameDoesExists_Test()
         {
             var fileProcess = new FileProcess();
             bool fromCall;
@@ -67,7 +66,7 @@ namespace TDD.Playground.Tests
         }
 
         [TestMethod]
-        public void FileNameDoesExistsSimpleMessage()
+        public void FileNameDoesExistsSimpleMessage_Test()
         {
             var fileProcess = new FileProcess();
             bool fromCall;
@@ -79,7 +78,7 @@ namespace TDD.Playground.Tests
         }
 
         [TestMethod]
-        public void FileNameDoesExistsMessageFormatting()
+        public void FileNameDoesExistsMessageFormatting_Test()
         {
             var fileProcess = new FileProcess();
             bool fromCall;
@@ -91,9 +90,9 @@ namespace TDD.Playground.Tests
         }
 
         [TestMethod]
-        [Owner("EduardoCM")]
+        [Owner("Eduardo")]
         [DeploymentItem(FILE_NAME_TO_DEPLOY)]
-        public void FileNameDoesExistsDeploymentItem()
+        public void FileNameDoesExistsDeploymentItem_Test()
         {
             var fileProcess = new FileProcess();
             string fileName;
@@ -108,11 +107,10 @@ namespace TDD.Playground.Tests
         }
 
         [TestMethod]
-        [Description("Check if a file does NOT exist.")]
-        [Owner("EduardoCM")]
+        [Owner("Eduardo")]
         [Priority(0)]
         [TestCategory("NoException")]
-        public void FileNameDoesNotExists()
+        public void FileNameDoesNotExists_Test()
         {
             var fileProcess = new FileProcess();
             bool fromCall;
@@ -123,22 +121,21 @@ namespace TDD.Playground.Tests
         }
 
         [TestMethod]
-        [Description("Check if a file path has been informed. If NO, throws an exception like ArgumentNullException.")]
         [ExpectedException(typeof(ArgumentNullException))]
-        [Owner("EduardoCM")]
+        [Owner("Eduardo")]
         [Priority(1)]
         [TestCategory("Exception")]
-        public void FileNameNullOrEmpty_ThrowsArgumentNullException()
+        public void FileNameNullOrEmpty_ThrowsArgumentNullException_Test()
         {
             var fileProcess = new FileProcess();
             fileProcess.FileExists(string.Empty);
         }
 
         [TestMethod]
-        [Owner("EduardoCM")]
+        [Owner("Eduardo")]
         [Priority(1)]
         [TestCategory("Exception")]
-        public void FileNameNullOrEmpty_ThrowsArgumentNullException_UsingTryCatch()
+        public void FileNameNullOrEmpty_ThrowsArgumentNullException_UsingTryCatch_Test()
         {
             var fileProcess = new FileProcess();
 
@@ -156,7 +153,7 @@ namespace TDD.Playground.Tests
 
         [TestMethod]
         [Timeout(3100)]
-        public void SimulateTimeout()
+        public void SimulateTimeout_Test()
         {
             Thread.Sleep(3000);
         }

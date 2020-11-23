@@ -8,8 +8,8 @@ namespace TDD.Playground.Tests
     public class CollectionAssertTest
     {
         [TestMethod]
-        [Owner("EduardoCM")]
-        public void AreCollectionEqualFailsBecauseNoComparerTest()
+        [Owner("Eduardo")]
+        public void AreCollectionEqualFailsBecauseNoComparer_Test()
         {
             var peopleExpected = new List<Person>
             {
@@ -26,8 +26,8 @@ namespace TDD.Playground.Tests
         }
 
         [TestMethod]
-        [Owner("EduardoCM")]
-        public void AreCollectionEqualWithComparerTest()
+        [Owner("Eduardo")]
+        public void AreCollectionEqualWithComparer_Test()
         {
             var personManager = new PersonManager();
             var peopleActual = new List<Person>();
@@ -47,8 +47,8 @@ namespace TDD.Playground.Tests
         }
 
         [TestMethod]
-        [Owner("EduardoCM")]
-        public void AreCollectionEquivalentTest()
+        [Owner("Eduardo")]
+        public void AreCollectionEquivalent_Test()
         {
             var personManager = new PersonManager();
             var peopleActual = new List<Person>();
@@ -64,8 +64,8 @@ namespace TDD.Playground.Tests
         }
 
         [TestMethod]
-        [Owner("EduardoCM")]
-        public void IsCollectionOfTypeTest()
+        [Owner("Eduardo")]
+        public void IsCollectionOfType_Test()
         {
             var personManager = new PersonManager();
             var peopleActual = new List<Person>();
