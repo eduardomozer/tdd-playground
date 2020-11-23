@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDD.Playground", "TDD.Playground\TDD.Playground.csproj", "{CD2E5D38-3ED1-4103-A3B0-60C6E2D6DBD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDD.Playground.Tests", "TDD.Playground.Tests\TDD.Playground.Tests.csproj", "{44847905-DAEA-468F-A88A-15A65DC08A9B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD2E5D38-3ED1-4103-A3B0-60C6E2D6DBD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD2E5D38-3ED1-4103-A3B0-60C6E2D6DBD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD2E5D38-3ED1-4103-A3B0-60C6E2D6DBD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD2E5D38-3ED1-4103-A3B0-60C6E2D6DBD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44847905-DAEA-468F-A88A-15A65DC08A9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44847905-DAEA-468F-A88A-15A65DC08A9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44847905-DAEA-468F-A88A-15A65DC08A9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44847905-DAEA-468F-A88A-15A65DC08A9B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C92E090A-4132-4190-8586-0810E1C1360C}
+	EndGlobalSection
+EndGlobal
