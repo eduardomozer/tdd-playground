@@ -27,9 +27,9 @@ namespace TDD.Playground.PersonClasses
         {
             var people = new List<Person>
             {
-                new Person("Eduardo", "Mozer"),
-                new Person("Donald", "Trump"),
-                new Person("Joe", "Biden")
+                new Person("Jack", "Sparrow"),
+                new Person("Marlon", "Brando"),
+                new Person("James", "Bond")
             };
 
             return people;
@@ -39,8 +39,8 @@ namespace TDD.Playground.PersonClasses
         {
             var people = new List<Person>();
 
-            people.Add(CreatePerson("Eduardo", "Mozer", true));
-            people.Add(CreatePerson("Donald", "Trump", true));
+            people.Add(CreatePerson("Jack", "Sparrow", true));
+            people.Add(CreatePerson("Marlon", "Brando", true));
 
             return people;
         }

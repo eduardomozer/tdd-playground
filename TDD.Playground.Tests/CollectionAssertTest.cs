@@ -13,12 +13,11 @@ namespace TDD.Playground.Tests
         {
             var peopleExpected = new List<Person>
             {
-                new Person("Eduardo", "Mozer"),
-                new Person("Donald", "Trump"),
-                new Person("Joe", "Biden")
+                new Person("Jack", "Sparrow"),
+                new Person("Marlon", "Brando"),
+                new Person("James", "Bond")
             };
 
-            // You sall not pass!
             var personManager = new PersonManager();
             var peopleActual = personManager.GetPeople();
 
@@ -33,12 +32,11 @@ namespace TDD.Playground.Tests
             var peopleActual = new List<Person>();
             var peopleExpected = new List<Person>
             {
-                new Person("Eduardo", "Mozer"),
-                new Person("Donald", "Trump"),
-                new Person("Joe", "Biden")
+                new Person("Jack", "Sparrow"),
+                new Person("Marlon", "Brando"),
+                new Person("James", "Bond")
             };
 
-            // You sall not pass!
             peopleActual = personManager.GetPeople();
 
             var comparer = Comparer<Person>.Create((p1, p2) => (p1.FirstName == p2.FirstName && p1.LastName == p2.LastName) ? 0 : 1);

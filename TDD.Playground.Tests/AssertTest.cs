@@ -34,7 +34,7 @@ namespace TDD.Playground.Tests
         public void AreNotEqual_Test()
         {
             string str1 = "John";
-            string str2 = "Roger";
+            string str2 = "Jack";
 
             Assert.AreNotEqual(str1, str2);
         }
