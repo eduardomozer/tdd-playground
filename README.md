@@ -1,3 +1,3 @@
 # tdd-playground
 
-_A small web application that uses angularjs, bootstrap, C# .NET and Web API._
+_Testing unit testing concepts._
